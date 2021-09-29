@@ -1,11 +1,9 @@
 python validation.py \
---load_name './models/SCGAN_WGANGP_epoch40_bs8.pth' \
+--load_name './models/EMPC_epoch40_bs64.pth' \
 --batch_size 1 \
 --num_workers 1 \
---pad 'reflect' \
---activ_g 'lrelu' \
---activ_d 'lrelu' \
---norm_g 'bn' \
---norm_d 'bn' \
+--pad 'zero' \
+--activ 'relu' \
+--norm 'bn' \
 --baseroot_rgb './dataset/ILSVRC2012_val_256' \
 --crop_size 256 \
